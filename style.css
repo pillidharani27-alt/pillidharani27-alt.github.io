@@ -80,7 +80,8 @@ nav a.active::after {
     width: 100%;
 }
 
-/* ===== HERO SECTION (TEXT + PHOTO RIGHT) ===== */
+/* ===== HERO SECTION ===== */
+
 .hero {
     padding: 4rem 0;
 }
@@ -93,8 +94,12 @@ nav a.active::after {
     flex-wrap: wrap;
 }
 
-.hero-text {
+.hero-content {
     flex: 1 1 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 650px;
 }
 
 .subtitle-pill {
@@ -107,13 +112,11 @@ nav a.active::after {
     border: 1px solid rgba(79, 70, 229, 0.4);
     background: rgba(79, 70, 229, 0.12);
     color: #a5b4fc;
-    margin-bottom: 0.9rem;
 }
 
 .hero h1 {
     font-size: 2.4rem;
     font-weight: 800;
-    margin-bottom: 0.6rem;
 }
 
 .hero h1 span {
@@ -166,37 +169,47 @@ nav a.active::after {
     background: rgba(15, 23, 42, 0.9);
 }
 
-/* small icons row under buttons */
-.social-icons {
-    margin-top: 1.2rem;
-    display: flex;
-    gap: 1rem;
-}
+/* hero photo on right */
 
-.social-icons a {
-    font-size: 0.9rem;
-    color: #93c5fd;
-    text-decoration: none;
-}
-
-.social-icons a:hover {
-    text-decoration: underline;
-}
-
-/* PHOTO ON RIGHT */
 .hero-photo {
-    flex: 0 0 230px;
+    flex: 0 0 220px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .hero-photo img {
     width: 220px;
     height: 220px;
-    border-radius: 999px;
+    border-radius: 50%;
     object-fit: cover;
     border: 3px solid #4f46e5;
-    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.9);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+}
+
+/* social icons */
+
+.social-icons {
+    margin-top: 1.3rem;
+    display: flex;
+    gap: 0.8rem;
+}
+
+.social-icons a {
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+.social-icons a:hover {
+    background: #111827;
+    border-color: #4f46e5;
+    color: #93c5fd;
 }
 
 /* ===== SECTION TITLES ===== */
@@ -333,16 +346,16 @@ footer {
         align-items: flex-start;
     }
 
-    .hero h1 {
-        font-size: 2rem;
+    .hero-photo {
+        align-self: center;
+        justify-content: center;
     }
 
-    .hero-photo {
-        justify-content: flex-start;
+    .hero h1 {
+        font-size: 2rem;
     }
 
     section {
         padding: 3rem 0;
     }
 }
-
