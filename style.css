@@ -297,3 +297,22 @@ footer {
     }
 }
 
+/* -------------------------
+   NEW HERO SECTION CSS
+   ------------------------- */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 4rem 0;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1 1 320px;
+}
+
+/* … rest of the code … */
+
