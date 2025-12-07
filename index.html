@@ -5,15 +5,14 @@
     <title>P. V. Dharani | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome for GitHub / LinkedIn icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
-
-    <!-- ================= NAVBAR ================= -->
     <header class="top-nav">
         <div class="container">
             <div class="logo">Dharani<span>.</span></div>
-
             <nav>
                 <a href="#home" class="active">Home</a>
                 <a href="#about">About</a>
@@ -25,73 +24,68 @@
     </header>
 
     <main>
-
-        <!-- ================= HERO SECTION ================= -->
+        <!-- HERO -->
         <section id="home" class="hero">
             <div class="container hero-inner">
-                
-                <div class="hero-text">
+                <div class="hero-content">
                     <span class="subtitle-pill">Data / Business Analyst Aspirant</span>
-
                     <h1>Hi, I'm <span>P. V. Dharani</span></h1>
-
                     <p>
-                        MCA student and data analytics learner, interested in Python, SQL, Excel, Power BI 
-                        and real-world projects.
+                        MCA student and data analytics learner, interested in Python, SQL,
+                        Excel, Power BI and real-world projects.
                     </p>
 
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <a href="https://github.com/pillidharani27-alt" target="_blank" class="btn btn-outline">
-                            GitHub Profile
-                        </a>
-                        <a href="YOUR_NOTION_LINK_HERE" target="_blank" class="btn btn-outline">
-                            Notion Portfolio
-                        </a>
+                        <a href="https://github.com/pillidharani27-alt"
+                           target="_blank" class="btn btn-outline">GitHub Profile</a>
+                        <a href="https://www.notion.so/" 
+                           target="_blank" class="btn btn-outline">Notion Portfolio</a>
                     </div>
 
                     <div class="social-icons">
-                        <a href="https://github.com/pillidharani27-alt" target="_blank">GitHub</a>
-                        <a href="https://www.linkedin.com/in/pillidharani" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/pillidharani27-alt"
+                           target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/pillidharani"
+                           target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- PHOTO ON RIGHT -->
                 <div class="hero-photo">
-                    <img src="portfolio pic.jpg" alt="P. V. Dharani">
+                    <!-- use your existing image file name -->
+                    <img src="portfolio pic.jpg" alt="P. V. Dharani" />
                 </div>
-
             </div>
         </section>
 
-
-        <!-- ================= ABOUT SECTION ================= -->
-        <section id="about" class="about">
+        <!-- ABOUT -->
+        <section id="about">
             <div class="container">
                 <h2 class="section-title">About Me</h2>
-
                 <p class="about-text">
                     I am an MCA student and aspiring Data Analyst. I enjoy working with data,
                     cleaning it, analysing it and presenting insights using Excel, SQL and Power BI.
-                    I am also learning Python for data analysis and machine learning.
-                    I am actively looking for internship and entry-level opportunities.
+                    I am also learning Python for data analysis and machine learning. I am actively
+                    looking for internship and entry-level opportunities.
                 </p>
             </div>
         </section>
 
-
-        <!-- ================= SKILLS ================= -->
+        <!-- SKILLS -->
         <section id="skills">
             <div class="container">
                 <h2 class="section-title">Skills</h2>
-
+                <p class="section-subtitle">Tools & technologies I am learning and using</p>
                 <div class="skills-list">
                     <span class="skill-pill">Excel</span>
                     <span class="skill-pill">SQL</span>
                     <span class="skill-pill">Power BI</span>
                     <span class="skill-pill">Tableau (Basics)</span>
                     <span class="skill-pill">Python</span>
-                    <span class="skill-pill">Machine Learning</span>
                     <span class="skill-pill">Git & GitHub</span>
                     <span class="skill-pill">Problem Solving</span>
                     <span class="skill-pill">Communication</span>
@@ -99,65 +93,60 @@
             </div>
         </section>
 
-
-        <!-- ================= PROJECTS ================= -->
+        <!-- PROJECTS -->
         <section id="projects">
             <div class="container">
                 <h2 class="section-title">Projects</h2>
 
                 <div class="projects-grid">
-
-                    <!-- Project 1 -->
-                    <div class="project-card">
+                    <article class="project-card">
                         <h3 class="project-title">Insurance Analytics Dashboard</h3>
                         <p>
-                            Built a Power BI dashboard to track premiums, cross-sell,
-                            renewals and achievements. Added interactive filters and KPIs.
+                            Built a Power BI dashboard to track premiums, cross-sell, renewals
+                            and achievements. Added interactive filters and KPIs.
                         </p>
                         <p class="project-tools">Tools: Excel, Power BI</p>
-                    </div>
+                    </article>
 
-                    <!-- Project 2 -->
-                    <div class="project-card">
+                    <article class="project-card">
                         <h3 class="project-title">YouTube Spam Comment Detection</h3>
                         <p>
-                            Machine learning model to classify spam comments using Python 
+                            Machine learning model to classify spam comments using Python
                             and different classifiers, integrated with a simple web app.
                         </p>
                         <p class="project-tools">Tools: Python, ML, Flask</p>
-                    </div>
+                    </article>
 
-                    <!-- Project 3 -->
-                    <div class="project-card">
+                    <article class="project-card">
                         <h3 class="project-title">Portfolio Website</h3>
                         <p>
                             Personal website hosted on GitHub Pages to showcase my skills,
                             projects and contact information.
                         </p>
-                        <p class="project-tools">Tools: HTML, CSS, GitHub Pages</p>
-                    </div>
-
+                        <p class="project-tools">Tools: HTML, CSS, JavaScript, GitHub Pages</p>
+                    </article>
                 </div>
             </div>
         </section>
 
-
-        <!-- ================= CONTACT ================= -->
+        <!-- CONTACT -->
         <section id="contact">
             <div class="container">
                 <h2 class="section-title">Contact</h2>
-
-                <p class="contact-text">If you'd like to connect, feel free to reach out:</p>
-
+                <p class="contact-text">
+                    If you’d like to connect, feel free to reach out:
+                </p>
                 <ul class="contact-list">
                     <li><strong>Email:</strong> pillidharani27@gmail.com</li>
                     <li><strong>Location:</strong> Bangalore, India</li>
-                    <li><strong>GitHub:</strong> 
+                    <li>
+                        <strong>GitHub:</strong>
                         <a href="https://github.com/pillidharani27-alt" target="_blank">
                             github.com/pillidharani27-alt
                         </a>
                     </li>
-                    <li><strong>LinkedIn:</strong>
+                    <li>
+                        <strong>LinkedIn:</strong>
                         <a href="https://www.linkedin.com/in/pillidharani" target="_blank">
                             linkedin.com/in/pillidharani
                         </a>
@@ -165,15 +154,13 @@
                 </ul>
             </div>
         </section>
-
     </main>
 
-
-    <!-- ================= FOOTER ================= -->
     <footer>
         © 2025 Dharani · Built with GitHub Pages
     </footer>
 
+    <!-- (optional) empty script file -->
     <script src="script.js"></script>
 </body>
 </html>
