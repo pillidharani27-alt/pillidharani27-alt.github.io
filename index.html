@@ -1,9 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   <title>My Portfolio</title>
+    <meta charset="UTF-8" />
+    <title>P. V. Dharani | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-   <h1>Hello, this is my portfolio website!</h1>
+    <header class="top-nav">
+        <div class="logo">Dharani<span>.</span></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <p class="tag">Data / Business Analyst Aspirant</p>
+                <h1>Hi, I'm <span>P. V. Dharani</span></h1>
+                <p class="sub">
+                    MCA student and data analytics learner, interested in Python, SQL,
+                    Excel, Power BI and real-world projects.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="https://github.com/pillidharani27-alt" target="_blank" class="btn outline">
+                        GitHub Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>
+                I am an MCA student and aspiring Data Analyst. I enjoy working with
+                data, cleaning it, analysing it and presenting insights using Excel,
+                SQL and Power BI. I am also learning Python for data analysis and
+                machine learning. I am actively looking for internship and entry-level
+                opportunities.
+            </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="chips">
+                <span class="chip">Excel</span>
+                <span class="chip">SQL</span>
+                <span class="chip">Power BI</span>
+                <span class="chip">Tableau (Basics)</span>
+                <span class="chip">Python</span>
+                <span class="chip">Git & GitHub</span>
+                <span class="chip">Problem Solving</span>
+                <span class="chip">Communication</span>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Insurance Analytics Dashboard</h3>
+                    <p>
+                        Built a Power BI dashboard to track premiums, cross-sell,
+                        renewals and achievements. Added interactive filters and KPIs.
+                    </p>
+                    <p class="tech">Tools: Excel, Power BI</p>
+                    <!-- Put your GitHub / Drive link later -->
+                    <!-- <a href="#" class="card-link" target="_blank">View Project</a> -->
+                </article>
+
+                <article class="card">
+                    <h3>YouTube Spam Comment Detection</h3>
+                    <p>
+                        Machine learning model to classify spam comments using Python
+                        and different classifiers, integrated with a simple web app.
+                    </p>
+                    <p class="tech">Tools: Python, ML, Flask</p>
+                </article>
+
+                <article class="card">
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        Personal website hosted on GitHub Pages to showcase my skills,
+                        projects and contact information.
+                    </p>
+                    <p class="tech">Tools: HTML, CSS, JavaScript, GitHub Pages</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>If you’d like to connect, feel free to reach out:</p>
+            <ul class="contact-list">
+                <li><strong>Email:</strong> yourmail@example.com</li>
+                <li><strong>Location:</strong> Bangalore, India</li>
+                <li>
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/pillidharani27-alt" target="_blank">
+                        github.com/pillidharani27-alt
+                    </a>
+                </li>
+                <li>
+                    <strong>LinkedIn:</strong> (add your LinkedIn link here)
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 Dharani · Built with GitHub Pages
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
