@@ -80,16 +80,21 @@ nav a.active::after {
     width: 100%;
 }
 
-/* ===== HERO SECTION ===== */
+/* ===== HERO SECTION (TEXT + PHOTO RIGHT) ===== */
 .hero {
-    padding-top: 4rem;
+    padding: 4rem 0;
 }
 
-.hero-content {
+.hero-inner {
     display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    max-width: 650px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1 1 320px;
 }
 
 .subtitle-pill {
@@ -102,11 +107,13 @@ nav a.active::after {
     border: 1px solid rgba(79, 70, 229, 0.4);
     background: rgba(79, 70, 229, 0.12);
     color: #a5b4fc;
+    margin-bottom: 0.9rem;
 }
 
 .hero h1 {
     font-size: 2.4rem;
     font-weight: 800;
+    margin-bottom: 0.6rem;
 }
 
 .hero h1 span {
@@ -157,6 +164,39 @@ nav a.active::after {
 
 .btn-outline:hover {
     background: rgba(15, 23, 42, 0.9);
+}
+
+/* small icons row under buttons */
+.social-icons {
+    margin-top: 1.2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    font-size: 0.9rem;
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    text-decoration: underline;
+}
+
+/* PHOTO ON RIGHT */
+.hero-photo {
+    flex: 0 0 230px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-photo img {
+    width: 220px;
+    height: 220px;
+    border-radius: 999px;
+    object-fit: cover;
+    border: 3px solid #4f46e5;
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.9);
 }
 
 /* ===== SECTION TITLES ===== */
@@ -288,31 +328,21 @@ footer {
         font-size: 0.9rem;
     }
 
+    .hero-inner {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
     .hero h1 {
         font-size: 2rem;
+    }
+
+    .hero-photo {
+        justify-content: flex-start;
     }
 
     section {
         padding: 3rem 0;
     }
 }
-
-/* -------------------------
-   NEW HERO SECTION CSS
-   ------------------------- */
-
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3rem;
-    padding: 4rem 0;
-    flex-wrap: wrap;
-}
-
-.hero-text {
-    flex: 1 1 320px;
-}
-
-/* … rest of the code … */
 
