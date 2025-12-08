@@ -289,6 +289,75 @@ nav a.active::after {
     text-decoration: none;
     color: #93c5fd;
 }
+/* ===== CERTIFICATIONS ===== */
+#certifications {
+    padding-top: 4rem;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+.cert-card {
+    display: flex;
+    gap: 1rem;
+    padding: 1.2rem 1.3rem;
+    border-radius: 1rem;
+    background: radial-gradient(circle at top left, #111827, #020617);
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    box-shadow: 0 16px 30px rgba(15, 23, 42, 0.9);
+    align-items: flex-start;
+}
+
+.cert-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.cert-content {
+    flex: 1;
+}
+
+.cert-title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.cert-provider {
+    font-size: 0.9rem;
+    color: #9ca3af;
+    margin-bottom: 0.25rem;
+}
+
+.cert-meta {
+    font-size: 0.85rem;
+    color: #a5b4fc;
+    margin-bottom: 0.7rem;
+}
+
+.btn-cert {
+    padding: 0.45rem 1.1rem;
+    font-size: 0.85rem;
+    border-radius: 999px;
+    border: 1px solid rgba(129, 140, 248, 0.8);
+    background: transparent;
+    color: #e5e7eb;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-cert:hover {
+    background: rgba(79, 70, 229, 0.18);
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.45);
+}
+
 
 /* ===== CONTACT ===== */
 .contact-text {
@@ -359,28 +428,3 @@ footer {
         padding: 3rem 0;
     }
 }
-/* ===== CERTIFICATIONS SECTION ===== */
-.cert-list {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-
-.cert-item {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 1rem;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.cert-item h3 {
-    color: #60a5fa;
-    margin-bottom: 0.3rem;
-}
-
-.cert-item p {
-    color: #cbd5e1;
-    margin: 0.1rem 0;
-}
-
