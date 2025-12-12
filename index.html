@@ -1,147 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>P. V. Dharani | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <!-- Font Awesome for GitHub / LinkedIn icons -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8" />
+  <title>P. V. Dharani | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header class="top-nav">
-        <div class="container">
-            <div class="logo">Dharani<span>.</span></div>
-            <nav>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#certifications">Certifications</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <header class="top-nav">
+    <div class="container nav-inner">
+      <div class="logo">Dharani<span>.</span></div>
+      <nav class="main-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <span class="subtitle-pill">Data / Business Analyst Aspirant</span>
+          <h1>Hi, I'm <span>P. V. Dharani</span></h1>
+          <p class="value-line">Aspiring Data Analyst skilled in transforming complex data into meaningful, actionable insights.</p>
+
+          <p class="about-short">
+            I’m an aspiring Data Analyst with hands-on experience in Excel, SQL, Power BI, Tableau, and Python.
+            I enjoy exploring data, uncovering patterns, and turning insights into meaningful dashboards and reports.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="https://github.com/pillidharani27-alt" target="_blank" class="btn btn-outline">GitHub Profile</a>
+            <a href="YOUR_PORTFOLIO_NOTION_LINK" target="_blank" class="btn btn-outline">Notion Portfolio</a>
+          </div>
+
+          <div class="social-icons">
+            <a href="https://github.com/pillidharani27-alt" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/pillidharani" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <img src="portfolio pic.jpg" alt="P. V. Dharani" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+          I’m an MCA student and aspiring Data Analyst with practical experience in Excel, SQL, Power BI, Tableau, and Python.
+          I build dashboards, perform EDA, and deliver KPI-driven reports. I’ve completed projects in analytics and machine learning and
+          I’m actively looking for internship or entry-level Data Analyst roles.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">Tools & technologies I use</p>
+        <div class="skills-list">
+          <span class="skill-pill">Excel</span>
+          <span class="skill-pill">SQL</span>
+          <span class="skill-pill">Power BI</span>
+          <span class="skill-pill">Tableau (Basics)</span>
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">Git & GitHub</span>
+          <span class="skill-pill">Problem Solving</span>
+          <span class="skill-pill">Communication</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-grid">
+
+          <!-- Insurance -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/proj-insurance.png" alt="Insurance Analytics Dashboard screenshot" />
+            </div>
+
+            <h3 class="project-title">Insurance Analytics Dashboard</h3>
+            <p>Interactive analytics dashboards built in Power BI, Tableau, and Excel to analyze premiums, renewals and cross-sell KPIs.</p>
+            <p class="project-tools">Tools: Excel, Power BI, Tableau, SQL</p>
+
+            <div class="project-links">
+              <a class="proj-btn case" href="YOUR_NOTION_INSURANCE_LINK" target="_blank" rel="noopener noreferrer">View Case Study</a>
+              <a class="proj-btn code" href="https://github.com/pillidharani27-alt/Insurance_Analytics-Dashboard" target="_blank">GitHub Repo</a>
+            </div>
+          </article>
+
+          <!-- Spam -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/proj-spam.png" alt="Spam Detection Screenshot" />
+            </div>
+
+            <h3 class="project-title">YouTube Spam Comment Detection</h3>
+            <p>Machine learning model to classify spam/ham comments using NLP techniques, integrated with a Flask-based prediction UI.</p>
+            <p class="project-tools">Tools: Python, ML, NLP, Flask, SVM</p>
+
+            <div class="project-links">
+              <a class="proj-btn case" href="YOUR_NOTION_SPAM_LINK" target="_blank" rel="noopener noreferrer">View Case Study</a>
+              <a class="proj-btn code" href="https://github.com/pillidharani27-alt/YouTube-Spam-Detection-ML" target="_blank">GitHub Repo</a>
+            </div>
+          </article>
+
+          <!-- Portfolio -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/proj-portfolio.png" alt="Portfolio Website Screenshot" />
+            </div>
+
+            <h3 class="project-title">Portfolio Website</h3>
+            <p>Personal portfolio website built with HTML, CSS, and JavaScript and deployed using GitHub Pages.</p>
+            <p class="project-tools">Tools: HTML, CSS, JavaScript, GitHub Pages</p>
+
+            <div class="project-links">
+              <a class="proj-btn case" href="YOUR_NOTION_PORTFOLIO_LINK" target="_blank" rel="noopener noreferrer">View Case Study</a>
+              <a class="proj-btn code" href="https://github.com/pillidharani27-alt/pillidharani27-alt.github.io" target="_blank">GitHub Repo</a>
+            </div>
+          </article>
 
         </div>
-    </header>
-
-    <main>
-        <!-- HERO -->
-        <!-- ===== HERO (updated) ===== -->
-<section id="home" class="hero">
-  <div class="container hero-inner">
-    <div class="hero-content">
-      <span class="subtitle-pill">Data / Business Analyst Aspirant</span>
-      <h1>Hi, I'm <span>P. V. Dharani</span></h1>
-
-      <!-- stronger value line -->
-      <p>
-      “Aspiring Data Analyst skilled in turning raw data into meaningful insights using Excel, SQL, Power BI, Python, and Tableau.”
-      </p>
-
-      <div class="hero-buttons">
-        <!-- Resume button: replace Drive link with your shareable resume URL -->
-        <a href="https://drive.google.com/file/d/1tIJhAZmTpLlZzV3NYURscnVpShlLA0ma/view?usp=drive_link" class="btn btn-primary" rel="noopener noreferrer">Download Resume</a>
-
-        <a href="#projects" class="btn btn-outline">View Projects</a>
-        <a href="https://github.com/pillidharani27-alt" target="_blank" class="btn btn-outline" rel="noopener noreferrer">GitHub Profile</a>
-        <a href="https://nifty-character-16a.notion.site/P-V-Dharani-Portfolio-2c26e14b043080459536c98bba79fca7" target="_blank" class="btn btn-outline" rel="noopener noreferrer">Notion Case Studies</a>
       </div>
+    </section>
 
-      <div class="social-icons" style="margin-top:0.6rem;">
-        <a href="https://github.com/pillidharani27-alt" target="_blank" aria-label="GitHub" rel="noopener noreferrer">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/pillidharani" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <!-- small location text -->
-        <span style="margin-left:12px; color:#9ca3af; font-size:0.95rem;">Bangalore, India</span>
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+      <div class="container">
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">Verified certifications that strengthen my Data Analyst profile.</p>
+
+        <div class="cert-row">
+          <article class="cert-card">
+            <div class="cert-left"><div class="cert-icon">🎓</div></div>
+            <div class="cert-right">
+              <div>
+                <h3 class="cert-title">NASSCOM FutureSkills – Data Analytics Certification</h3>
+                <p class="cert-provider">Issued by: NASSCOM</p>
+                <p class="cert-meta">Data Analyst • Completed</p>
+              </div>
+              <a class="cert-btn" href="YOUR_NASSCOM_CERT_LINK" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            </div>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-left"><div class="cert-icon">📊</div></div>
+            <div class="cert-right">
+              <div>
+                <h3 class="cert-title">Data Analyst Course Completion</h3>
+                <p class="cert-provider">Issued by: ExcelR Solutions</p>
+                <p class="cert-meta">Excel • SQL • Power BI • Tableau</p>
+              </div>
+              <a class="cert-btn" href="YOUR_EXCELR_CERT_LINK" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            </div>
+          </article>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="hero-photo">
-      <!-- ensure filename matches your repo file exactly (case & spaces) -->
-      <img src="portfolio pic.jpg" alt="P. V. Dharani" />
-    </div>
-  </div>
-</section>
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-text">If you’d like to connect, feel free to reach out:</p>
 
+        <div class="contact-row">
+          <div class="contact-col">
+            <p><strong>Email:</strong> <a href="mailto:pillidharani27@gmail.com">pillidharani27@gmail.com</a></p>
+            <p><strong>Location:</strong> Bangalore, India</p>
+          </div>
 
-        <!-- ABOUT -->
-        <section id="about">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <p class="about-text">
-                   “I’m an aspiring Data Analyst with hands-on experience in Excel, SQL, Power BI, Tableau, and Python. 
-                    I enjoy exploring data, uncovering patterns, and turning insights into meaningful dashboards and reports. 
-                    I’ve built projects in analytics and machine learning, and I’m actively seeking opportunities to apply my skills to real-world business problems.”
-                </p>
-            </div>
-        </section>
+          <div class="contact-col">
+            <p><strong>GitHub:</strong> <a href="https://github.com/pillidharani27-alt" target="_blank">github.com/pillidharani27-alt</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pillidharani" target="_blank">linkedin.com/in/pillidharani</a></p>
+          </div>
 
-        <!-- SKILLS -->
-        <section id="skills">
-            <div class="container">
-                <h2 class="section-title">Skills</h2>
-                <p class="section-subtitle">Tools & technologies I am learning and using</p>
-                <div class="skills-list">
-                    <span class="skill-pill">Excel</span>
-                    <span class="skill-pill">SQL</span>
-                    <span class="skill-pill">Power BI</span>
-                    <span class="skill-pill">Tableau (Basics)</span>
-                    <span class="skill-pill">Python</span>
-                    <span class="skill-pill">Data Cleaning & EDA</span>
-                    <span class="skill-pill">Data Visualization</span>
-                    <span class="skill-pill">Git & GitHub</span>
-                    <span class="skill-pill">Problem Solving</span>
-                    <span class="skill-pill">Communication</span>
-                </div>
-            </div>
-        </section>
+          <div class="contact-col resume-col">
+            <p><strong>Resume</strong></p>
+            <a class="download-resume" href="YOUR_RESUME_LINK" target="_blank" rel="noopener noreferrer">Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <!-- PROJECTS -->
-        <section id="projects">
-            <div class="container">
-                <h2 class="section-title">Projects</h2>
+  <footer>
+    © 2025 Dharani · Built with GitHub Pages
+  </footer>
 
-                <div class="projects-grid">
-                   <article class="project-card">
-
-  <!-- Screenshot -->
-  <div class="project-image">
-    <img src="images/proj-insurance.png" 
-         alt="Insurance Dashboard Screenshot"
-         style="width:100%; border-radius:12px; border:1px solid #444;" />
-  </div>
-
-  <!-- Title -->
-  <h3 class="project-title">Insurance Analytics Dashboard</h3>
-
-  <!-- Short Description -->
-  <p>
-    Multi-tool insurance analytics project with dashboards built in Power BI, Tableau and Excel to analyze premiums, renewals, and cross-sell KPIs.
-  </p>
-
-  <!-- Tools -->
-  <p class="project-tools">Tools: Excel, Power BI, Tableau, SQL</p>
-
-  <!-- Buttons -->
-  <div class="project-links" style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
-    
-    <!-- Case Study Button -->
-    <a href="https://nifty-character-16a.notion.site/Insurance-Analytics-Case-Study" 
-       target="_blank" 
-       style="padding:6px 12px; background:#1e1b4b; color:#fff; border-radius:6px; text-decoration:none;">
-       View Case Study
-    </a>
-
-    <!-- GitHub Repo Button -->
-    <a href="https://github.com/pillidharani27-alt/Insurance_Analytics-Dashboard"
-       target="_blank"
-       style="padding:6px 12px; background:#312e81; color:#fff; border-radius:6px; text-decoration:none;">
-       GitHub Repo
-    </a>
-
-  </div>
-
-</article>
+  <script src="script.js"></script>
+</body>
+</html>
