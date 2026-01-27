@@ -73,76 +73,57 @@
 
 
     <!-- ABOUT -->
-   <section id="about">
-  <div class="container">
-    <h2 class="section-title">About Me</h2>
+  <div class="tab-titles">
+  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+  <p class="tab-links" onclick="opentab('experience')">Experience</p>
+  <p class="tab-links" onclick="opentab('education')">Education</p>
+</div>
 
-    <p class="about-text">
-      I’m an MCA student and aspiring Data Analyst with practical experience in Excel, SQL, Power BI, Tableau, and Python.
-      I build dashboards, perform EDA, and deliver KPI-driven reports.
-    </p>
+<!-- SKILLS -->
+<div class="tab-contents active-tab" id="skills">
+  <ul>
+    <li><span>Data Analysis</span><br>Python, SQL, Excel</li>
+    <li><span>Visualization</span><br>Power BI, Tableau</li>
+    <li><span>Spreadsheets</span><br>Pivot Tables, Power Query, Dashboards</li>
+    <li><span>Databases</span><br>MySQL</li>
+    <li><span>Tools</span><br>Git, GitHub, VS Code</li>
+  </ul>
+</div>
 
-    <!-- ABOUT TABS -->
-    <div class="about-tabs">
+<!-- EXPERIENCE -->
+<div class="tab-contents" id="experience">
+  <ul>
+    <li>
+      <span>Data Analyst Intern — ExcelR Solutions</span><br>
+      Worked on data cleaning, EDA, KPI analysis, and dashboard creation using Excel, SQL, Power BI, and Tableau.
+    </li>
+    <li>
+      <span>Python & MySQL Intern — ThopsTech</span><br>
+      Used Python (Pandas, NumPy) and SQL for data processing, analysis, and reporting.
+    </li>
+    <li>
+      <span>Project Experience</span><br>
+      CRM Analytics, Insurance Analytics Dashboard, YouTube Spam Detection (ML), Excel Data Analysis.
+    </li>
+  </ul>
+</div>
 
-      <div class="tab-buttons">
-        <button class="tab-btn active" data-tab="skills">Skills</button>
-        <button class="tab-btn" data-tab="experience">Experience</button>
-        <button class="tab-btn" data-tab="education">Education</button>
-      </div>
+<!-- EDUCATION -->
+<div class="tab-contents" id="education">
+  <ul>
+    <li>
+      <span>2023 – 2025</span><br>
+      Master of Computer Applications (MCA)<br>
+      Sri Venkateshwara College of Engineering — CGPA: 9.35
+    </li>
+    <li>
+      <span>2020 – 2023</span><br>
+      Bachelor of Computer Science (B.Sc)<br>
+      Medha Degree College — CGPA: 8.21
+    </li>
+  </ul>
+</div>
 
-      <div class="tab-content">
-
-        <!-- SKILLS -->
-        <div class="tab-panel active" id="skills">
-          <ul>
-            <li><strong>Programming & Analysis:</strong> Python, SQL</li>
-            <li><strong>Data Visualization:</strong> Power BI, Tableau</li>
-            <li><strong>Spreadsheets:</strong> Excel (Pivot Tables, Power Query)</li>
-            <li><strong>Databases:</strong> MySQL</li>
-            <li><strong>Analytics:</strong> Data Cleaning, EDA, KPI Reporting</li>
-            <li><strong>Tools:</strong> Git, GitHub, VS Code</li>
-          </ul>
-        </div>
-
-        <!-- EXPERIENCE -->
-        <div class="tab-panel" id="experience">
-          <p><strong>Data Analyst Intern — ExcelR Solutions</strong><br>
-            <span class="muted">Aug 2025 – Oct 2025</span>
-          </p>
-          <ul>
-            <li>Performed data cleaning and EDA on large datasets</li>
-            <li>Built dashboards using Excel, SQL, Power BI, and Tableau</li>
-            <li>Created KPI-driven business reports</li>
-          </ul>
-
-          <p><strong>Python & MySQL Intern — ThopsTech</strong><br>
-            <span class="muted">Feb 2024 – May 2024</span>
-          </p>
-          <ul>
-            <li>Used Python (Pandas, NumPy) for data analysis</li>
-            <li>Wrote SQL queries using joins and aggregations</li>
-            <li>Worked with structured databases</li>
-          </ul>
-        </div>
-
-        <!-- EDUCATION -->
-        <div class="tab-panel" id="education">
-          <p><strong>Master of Computer Applications (MCA)</strong><br>
-            Sri Venkateshwara College of Engineering, Tirupati<br>
-            <span class="muted">2023 – 2025 | CGPA: 9.35</span>
-          </p>
-
-          <p><strong>Bachelor of Computer Science (B.Sc.)</strong><br>
-            Medha Degree College, Mydukur<br>
-            <span class="muted">2020 – 2023 | CGPA: 8.21</span>
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
 
 
     <!-- PROJECTS -->
