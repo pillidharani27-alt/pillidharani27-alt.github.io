@@ -50,7 +50,7 @@ section { padding:4rem 0; border-bottom:1px solid rgba(255,255,255,0.03); }
 
 /* ===== SECTION TITLES ===== */
 .section-title { font-size:1.6rem; margin-bottom:1.2rem; }
-.section-subtitle { color:#9ca3af; font-size:.95rem; margin-bottom:1rem; }
+.section-subtitle { color:#050816; font-size:.95rem; margin-bottom:1rem; }
 
 .about-tabs {
   margin-top: 1.5rem;
@@ -92,7 +92,7 @@ section { padding:4rem 0; border-bottom:1px solid rgba(255,255,255,0.03); }
 }
 
 .tab-head {
-  color:#ff0055;
+  color:#A78BFA;
   margin-top: 14px;
   font-weight: 600;
 }
