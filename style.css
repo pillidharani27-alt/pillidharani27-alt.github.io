@@ -228,3 +228,17 @@ section { padding:4rem 0; border-bottom:1px solid rgba(255,255,255,0.03); }
   .contact-line { font-size: 0.98rem; }
   .resume-download { padding: 10px 16px; width: 100%; text-align: center; }
 }
+const tabLinks = document.querySelectorAll('.tab-link');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    const tabId = link.getAttribute('data-tab');
+
+    tabLinks.forEach(l => l.classList.remove('active'));
+    tabContents.forEach(c => c.classList.remove('active'));
+
+    link.classList.add('active');
+    document.getElementById(tabId).classList.add('active');
+  });
+});
