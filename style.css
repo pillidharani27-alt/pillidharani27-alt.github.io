@@ -55,9 +55,56 @@ section { padding:4rem 0; border-bottom:1px solid rgba(255,255,255,0.03); }
 /* ABOUT */
 .about-text { color:#d1d5db; max-width:780px; }
 
-/* SKILLS */
-.skills-list { display:flex; flex-wrap:wrap; gap:.6rem; margin-top:.8rem; }
-.skill-pill { padding:.35rem .8rem; border-radius:999px; border:1px solid rgba(148,163,184,0.5); font-size:.85rem; color:#e5e7eb; }
+.about-tabs {
+  margin-top: 1.5rem;
+}
+
+.tab-titles {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.tab-link {
+  cursor: pointer;
+  font-size: 1.05rem;
+  color: #c7d2fe;
+  position: relative;
+}
+
+.tab-link.active {
+  color: #ffffff;
+}
+
+.tab-link.active::after {
+  content: "";
+  width: 18px;
+  height: 3px;
+  background: #ff0055;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-head {
+  color: #ff0055;
+  margin-top: 14px;
+  font-weight: 600;
+}
+
+.tab-content p {
+  margin: 4px 0;
+  color: #e5e7eb;
+}
+
 
 /* ===== PROJECTS ===== */
 .projects-grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:1.2rem; margin-top:1rem; }
